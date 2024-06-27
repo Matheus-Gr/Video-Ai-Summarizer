@@ -1,5 +1,5 @@
 /.conda
 /.vscode
 /__pycache__
-/summarizer_account.json
+/credentials.json
 /output.mp3
