@@ -80,7 +80,7 @@ def send_email(text: str, to_email: str, from_email: str, from_email_password: s
 
 
 def speak(text: str, google_cloud_account: str,
-          language_code: str, voice_name: str,
+          language_code: str, voice_name: str, speaking_rate: float = 1,
           auto_play: bool = True):
     """
     Converts text to speech using the Google Cloud Text-to-Speech API and plays the generated audio.
@@ -91,7 +91,7 @@ def speak(text: str, google_cloud_account: str,
     language_code: Language code of the voice chosen on Google Cloud Text-To-Speech
     voice_name: Voice name chosen on Google Cloud Text-To-Speech
     auto_play: If True, automatically plays the generated audio. Default is True.
-
+    speaking_rate: Speaking rate/speed, in the range [0.25, 4.0]. Default is 1.
     Returns:
     None
     """
@@ -108,7 +108,7 @@ def speak(text: str, google_cloud_account: str,
     audio_config = texttospeech.AudioConfig(
         audio_encoding=texttospeech.AudioEncoding.MP3,
         effects_profile_id=['small-bluetooth-speaker-class-device'],
-        speaking_rate=1,
+        speaking_rate=speaking_rate,
         pitch=1
     )
 

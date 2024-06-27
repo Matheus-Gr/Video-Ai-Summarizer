@@ -5,6 +5,7 @@ This project is a video summarizer tool that extracts transcriptions from YouTub
 ## Features
 
 - **Transcription**: Extracts the transcription of a YouTube video.
+- **Translate**: Translate the transcription if requested.
 - **Summarization**: Summarizes the transcription using a generative AI model.
 - **Text-to-Speech**: Converts the summary to speech using Google Cloud Text-to-Speech API.
 - **Email Sending**: Sends the summarized text via email.
@@ -117,6 +118,7 @@ Converts text to speech using the Google Cloud Text-to-Speech API and plays the 
   - `google_cloud_account` (str): The path to the Google Cloud service account credentials file.
   - `language_code` (str): The language code for the voice (e.g., "pt-BR").
   - `voice_name` (str): The name of the voice (e.g., 'pt-BR-Wavenet-C').
+  - `speaking_rate` (float): Speaking rate/speed, in the range [0.25, 4.0]. Default is 1.
   - `auto_play` (bool): If True, automatically plays the generated audio. Default is True.
 - **Returns**:
   - None
