@@ -1,3 +1,5 @@
 /.conda
 /.vscode
 /__pycache__
+/summarizer_account.json
+/output.mp3
