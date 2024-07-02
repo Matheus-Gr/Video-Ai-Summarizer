@@ -30,7 +30,7 @@ Demonstration: [LinkedIn](https://www.linkedin.com/posts/matheus-gr_llama3-whisp
 
    ```sh
    git clone https://github.com/Matheus-Gr/Video-Ai-Summarizer.git
-   cd video_summarizer
+   cd Video-Ai-Summarizer
    ```
 
 2. Create a virtual environment and activate it:
