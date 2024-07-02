@@ -14,16 +14,8 @@ Demonstration: [LinkedIn](https://www.linkedin.com/posts/matheus-gr_llama3-whisp
 
 ## Requirements
 
-- Python 3.11+
-- `pytube`
-- `pydub`
-- `google-cloud-texttospeech`
-- `google-oauth2`
-- `youtube-transcript-api`
-- `print_color`
-- `smtplib`
-- `ssl`
-- `email`
+- `Python 3.11+`
+- `Anaconda or miniconda`
 
 ## Installation
 
