@@ -2,6 +2,7 @@
 
 This project is a video summarizer tool that extracts transcriptions from YouTube videos, summarizes them using a generative AI model, converts the summaries to speech, and sends them via email.
 
+Demonstration: [LinkedIn](https://www.linkedin.com/posts/matheus-gr_llama3-whisper-elevenlabs-activity-7212213971062312960-s12O?utm_source=share&utm_medium=member_desktop)
 ## Features
 
 - **Transcription**: Extracts the transcription of a YouTube video.
@@ -28,8 +29,8 @@ This project is a video summarizer tool that extracts transcriptions from YouTub
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/yourusername/video_summarizer.git
-   cd video_summarizer
+   git clone https://github.com/Matheus-Gr/Video-Ai-Summarizer.git
+   cd Video-Ai-Summarizer
    ```
 
 2. Create a `conda` virtual environment and activate it:
