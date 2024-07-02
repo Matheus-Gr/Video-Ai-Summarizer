@@ -29,7 +29,7 @@ Demonstration: [LinkedIn](https://www.linkedin.com/posts/matheus-gr_llama3-whisp
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/yourusername/video_summarizer.git
+   git clone https://github.com/Matheus-Gr/Video-Ai-Summarizer.git
    cd video_summarizer
    ```
 
