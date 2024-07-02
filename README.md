@@ -32,25 +32,14 @@ This project is a video summarizer tool that extracts transcriptions from YouTub
    cd video_summarizer
    ```
 
-2. Create a virtual environment and activate it:
-
-   ```sh
-   python -m venv venv
-   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-   ```
-
-   Alternatively, you can use `conda` to create the environment:
+2. Create a `conda` virtual environment and activate it:
 
    ```sh
    conda env create -f environment.yml
-   conda activate video_summarizer
+   conda activate summarize
    ```
 
-3. Install the required dependencies using `pip`:
-
-   ```sh
-   pip install -r requirements.txt
-   ```
+3. You will need a service account in a `credentials.json` in the root folder. Recomend watch this [tutorial](https://youtu.be/DtlJH6MgBso?si=ghEd3QDVtnGnzO3N&t=64) from Parwiz Forogh Youtube Chanell.
 
 ## Usage
 
