@@ -3,6 +3,7 @@
 This project is a video summarizer tool that extracts transcriptions from YouTube videos, summarizes them using a generative AI model, converts the summaries to speech, and sends them via email.
 
 Demonstration: [LinkedIn](https://www.linkedin.com/posts/matheus-gr_llama3-whisper-elevenlabs-activity-7212213971062312960-s12O?utm_source=share&utm_medium=member_desktop)
+
 ## Features
 
 - **Transcription**: Extracts the transcription of a YouTube video.
@@ -40,7 +41,7 @@ Demonstration: [LinkedIn](https://www.linkedin.com/posts/matheus-gr_llama3-whisp
    conda activate summarize
    ```
 
-3. You will need a service account in a `credentials.json` in the root folder. Recomend watch this [tutorial](https://youtu.be/DtlJH6MgBso?si=ghEd3QDVtnGnzO3N&t=64) from Parwiz Forogh Youtube Chanell.
+3. You will need a google service account in a `credentials.json` file in the project root folder. Recomend watch this [tutorial](https://youtu.be/DtlJH6MgBso?si=ghEd3QDVtnGnzO3N&t=64) from Parwiz Forogh Youtube Chanell.
 
 ## Usage
 
