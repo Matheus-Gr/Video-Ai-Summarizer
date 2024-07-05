@@ -11,6 +11,19 @@ import ssl
 import smtplib
 
 
+def get_video_id(url: str) -> str:
+    """
+    Retrieves the video ID of a YouTube video.
+
+    Parameters:
+    url (str): URL of the YouTube video.
+
+    Returns:
+    str: Video ID of the video.
+    """
+    return url.split("=")[1]
+
+
 def get_transcription(url: str) -> str:
     """
     Retrieves the transcription of a YouTube video.
@@ -22,9 +35,9 @@ def get_transcription(url: str) -> str:
     str: The transcription of the video.
     """
     transcript = ""
-    video_id = url.split("=")[1]
+    video_id = get_video_id(url)
     responses = YouTubeTranscriptApi.get_transcript(
-        video_id, languages=['pt'])
+        video_id)
     for r in responses:
         transcript += " " + r["text"]
     return transcript

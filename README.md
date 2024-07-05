@@ -40,21 +40,30 @@ Demonstration: [LinkedIn](https://www.linkedin.com/posts/matheus-gr_llama3-whisp
 1. **Set Up Environment Variables**:
    Ensure the following environment variables are set in your environment:
 
-   - `video_url`: YouTube video url.
-   - `max_word`: Maximum of words on summary.
-   - `languague`: The language of summary, this don't need to be the same as video languague, must be in full like "American English" or "Brazilian Portuguese".
    - `gemini_key`: Your API key for Gemini.
    - `google_cloud`: Json containg yout Google Cloud Credentials.
    - `to_mail`: The recipient's email address.
    - `from_email`: The sender's email address.
    - `from_email_password`: The sender's email password.
-   - `language_code`: Language code of the voice chosen on Google Cloud Text-To-Speech
-   - `language_name`: Voice name chosen on Google Cloud Text-To-Speech
 
-   To chose a voice you can visit [voice list](https://cloud.google.com/text-to-speech/docs/voices) on google cloud site.
+2. **Set Up Summary Options**
 
-2. **Run the Notebook**:
-   Open and run the `video_summarizer.ipynb` notebook in Jupyter.
+   - `max_words`: Maximum of words on summary.
+   - `languague`: The language of the summary. This string should be fully specified, such as "American English" or "Brazilian Portuguese". If the chosen language is different from the video's language, the summary will be automatically translated.
+
+3. **Set Up Voice Options**: Custom you voice and language preferences:
+
+   - `language_code`: Language code of the voice chosen on Google Cloud Text-To-Speech.
+   - `voice_name`: Voice name chosen on Google Cloud Text-To-Speech.
+   - `speaking_rate`: Speed of the output audio.
+
+   _To chose a voice you can visit [voice list](https://cloud.google.com/text-to-speech/docs/voices) on google cloud site._
+
+4. **Run the Notebook**: Put your YouTube video link and run the notebook:
+
+   - `video_url`: YouTube video url. The video cannot be under any type of restrictions, like age restriction or private videos.
+
+   Run the `video_summarizer.ipynb` notebook on `summarize` enviroment.
 
 ## Functions
 
